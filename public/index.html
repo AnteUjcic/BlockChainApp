@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ETH Sender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Send ETH</h1>
+    <p class="sub"><span id="network">…</span> · via Alchemy</p>
+
+    <div id="warn" class="warn hidden">Mainnet — transactions use real ETH and cannot be reversed.</div>
+
+    <section id="wallet">
+      <button id="connect">Connect MetaMask</button>
+      <div id="account" class="hidden">
+        <div class="row"><span>Address</span><code id="addr"></code></div>
+        <div class="row"><span>Balance</span><strong id="balance">…</strong></div>
+        <div class="row"><span>Gas price</span><span id="gas">…</span></div>
+      </div>
+    </section>
+
+    <form id="send" class="hidden">
+      <label>Recipient address
+        <input id="to" placeholder="0x…" autocomplete="off" required />
+      </label>
+      <label>Amount (ETH)
+        <input id="amount" type="text" inputmode="decimal" placeholder="0.01" required />
+      </label>
+      <div id="estimate" class="muted"></div>
+      <button type="submit" id="submit">Send</button>
+    </form>
+
+    <div id="status" class="status"></div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

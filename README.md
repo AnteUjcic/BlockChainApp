@@ -1,5 +1,5 @@
 # Naziv projekta
 
-Autor: Ime Prezime
+Autor: Ante Ujcic
 
-Jedna rečenica: što aplikacija radi i za koju zajednicu.
+Jedna rečenica: Aplikacija sluzi za prebacivanje sepoliaETH
